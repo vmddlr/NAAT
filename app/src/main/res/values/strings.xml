@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">NAAT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="str_user">Usuario</string>
+    <string name="str_pass">Contraseña</string>
+    <string name="str_start_session">Iniciar sessión</string>
+    <string name="str_version">V2.0</string>
+    <string name="str_need_user">Falta ingresar el usuario</string>
+    <string name="str_need_password">Falta ingresar la contraseña</string>
+
+    <string name="str_pin">PINES</string>
+    <string name="str_refills">RECARGAS</string>
+    <string name="str_collection">RECAUDACIÓN</string>
+    <string name="str_admin">ADMINISTRACIÓN</string>
+    <string name="str_show">VER MÁS</string>
+
+    <string name="str_cellphone_minutes">Tiempo aire</string>
+
+    <string name="str_number">Número</string>
+    <string name="str_money">Cantidad</string>
+    <string name="str_continue">Continuar</string>
+    <string name="str_refills_phone">VENTA DE 3.0 A 100.0 CON INCREMENTO DE 1.0</string>
+    <string name="str_need_number">Falta ingresar el número</string>
+    <string name="str_need_money">Falta ingresar la cantidad</string>
+
+    <string name="str_folio">25327</string>
+    <string name="str_recharge">Se realizara una recarga</string>
+    <string name="str_number_phone">Número telefonico</string>
+    <string name="str_amount">Monto a recargar</string>
+    <string name="str_reference">Realice su pago oportunamente en la suscursal de referencia</string>
+    <string name="str_cancel">Cancelar</string>
+    <string name="str_accept">Aceptar</string>
+    
+    <string name="str_successful">La recarga se ha realizado con éxito</string>
+</resources>

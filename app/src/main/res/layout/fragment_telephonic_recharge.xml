@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_background"
+    tools:context=".ui.fragment.TelephonicRechargeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/ibBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimension_twenty"
+                android:layout_marginTop="@dimen/dimension_ten"
+                android:layout_marginBottom="@dimen/dimension_ten"
+                android:backgroundTint="@color/blue"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimension_five"
+                android:text="@string/str_refills"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_eighteen"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ibBack"
+                app:layout_constraintStart_toEndOf="@+id/ibBack"
+                app:layout_constraintTop_toTopOf="@+id/ibBack" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl85"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".85" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_fifteen"
+        android:textColor="@color/white"
+        android:text="@string/str_cellphone_minutes"
+        android:gravity="center"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barLayout"
+        app:layout_constraintBottom_toTopOf="@id/tilNumber" />
+
+
+    <ImageView
+        android:id="@+id/ivNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/tilNumber"
+        app:layout_constraintEnd_toEndOf="@+id/gl15"
+        app:layout_constraintTop_toTopOf="@+id/tilNumber"
+        app:tint="@color/white" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNumber"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimension_ten"
+        android:hint="@string/str_number"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/blue_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gl85"
+        app:layout_constraintStart_toStartOf="@id/gl15"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_eighteen" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/ivMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_money"
+        app:layout_constraintBottom_toBottomOf="@+id/tilMoney"
+        app:layout_constraintEnd_toEndOf="@+id/gl15"
+        app:layout_constraintTop_toTopOf="@+id/tilMoney"
+        app:tint="@color/white" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilMoney"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimension_ten"
+        android:hint="@string/str_money"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/blue_light"
+        app:layout_constraintEnd_toEndOf="@id/gl85"
+        app:layout_constraintStart_toStartOf="@id/gl15"
+        app:layout_constraintTop_toBottomOf="@id/tilNumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:maxLength="15"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_eighteen" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_refills_phone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_ten"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dimension_ten"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnContinue" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimension_fifty"
+        android:layout_marginBottom="@dimen/dimension_twenty"
+        android:layout_marginRight="@dimen/dimension_fifty"
+        android:backgroundTint="@color/blue"
+        android:padding="@dimen/dimension_ten"
+        android:text="@string/str_continue"
+        android:textSize="@dimen/txt_eighteen"
+        app:cornerRadius="@dimen/dimension_twenty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
